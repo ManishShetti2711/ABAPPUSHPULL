@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Template Store"
+  },
+  "ui5AppDetails": {
+    "appId": "ztemplatestore"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_4F1B7565507EE6CDE352836061851E71097291FF_TM",
+    "semanticObject": "ztemplatestore",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_4F1B7565507EE6CDE352836061851E71097291FF_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Template Store"
+      }
+    }
+  ]
+}

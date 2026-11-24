@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_DTADOBE_STORE'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_DTADOBE_STORE'
+  }
+}
+define service ZUI_ADOBE_STORE_O4 provider contracts odata_v4_ui {
+  expose ZC_DTADOBE_STORE;
+}

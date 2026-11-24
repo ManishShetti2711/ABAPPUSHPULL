@@ -1,0 +1,5 @@
+@EndUserText.label: 'Purchase Order Service Definition'
+define service ZSD_PURCHASE_ORDER {
+  expose ZI_PURCHASE_ORDER;
+  expose ZI_PURCHASE_ORDER_ITEM;
+}

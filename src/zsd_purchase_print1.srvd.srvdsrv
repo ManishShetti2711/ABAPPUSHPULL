@@ -1,0 +1,4 @@
+@EndUserText.label: 'Purchase Order Print at Column Srv Dfn'
+define service ZSD_PURCHASE_PRINT1 {
+  expose ZCE_PURCHASE_PRINT1;
+}

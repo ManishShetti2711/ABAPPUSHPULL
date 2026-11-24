@@ -1,0 +1,53 @@
+managed implementation in class ZBP_R_DTADOBE_STORE unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_DTADOBE_STORE alias ZrDtadobeStore
+persistent table ZDT_ADOBE_STORE
+extensible
+draft table ZDTADOBE_STORE_D
+etag master Lastchangedat
+lock master total etag Locallastchangedat
+authorization master( global )
+{
+  field ( mandatory : create )
+   Formtemplate;
+
+  field ( readonly )
+   Createdby,
+   Createdat,
+   Lastchangedby,
+   Lastchangedat,
+   Locallastchangedat;
+
+  field ( readonly : update )
+   Formtemplate;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZDT_ADOBE_STORE corresponding extensible
+  {
+    Formtemplate = FORMTEMPLATE;
+    Attachment = ATTACHMENT;
+    Mimetype = MIMETYPE;
+    Filename = FILENAME;
+    Xml = XML;
+    Zschema = ZSCHEMA;
+    Note = NOTE;
+    Createdby = CREATEDBY;
+    Createdat = CREATEDAT;
+    Lastchangedby = LASTCHANGEDBY;
+    Lastchangedat = LASTCHANGEDAT;
+    Locallastchangedat = LOCALLASTCHANGEDAT;
+  }
+
+}

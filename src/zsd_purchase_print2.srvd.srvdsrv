@@ -1,0 +1,5 @@
+@EndUserText.label: 'Purchase Order With  Print Buttom Service Definition'
+define service ZSD_PURCHASE_PRINT2 {
+  expose ZC_PURCHASE_ORDER;
+  expose ZC_PURCHASE_ORDER_ITEM;
+}

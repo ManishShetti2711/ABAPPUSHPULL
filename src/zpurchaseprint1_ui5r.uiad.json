@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Purchase Order Print"
+  },
+  "ui5AppDetails": {
+    "appId": "zpurchaseprint1"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_06FFC0179FE1EB67A23931BA1CCED9E3294BE6D5_TM",
+    "semanticObject": "zpurchaseprint1",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_06FFC0179FE1EB67A23931BA1CCED9E3294BE6D5_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Purchase Order Print",
+        "subtitle": "At Column"
+      }
+    }
+  ]
+}

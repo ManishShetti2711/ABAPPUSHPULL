@@ -1,0 +1,14 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_PURCHASE_ORDER //alias <alias_name>
+{
+  use association _Item;
+  use action Print;
+}
+
+define behavior for ZC_PURCHASE_ORDER_ITEM //alias <alias_name>
+{
+
+  use association _Header;
+}

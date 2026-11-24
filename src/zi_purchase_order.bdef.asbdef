@@ -1,0 +1,29 @@
+unmanaged implementation in class zbp_i_purchase_order unique;
+strict ( 2 );
+
+define behavior for ZI_PURCHASE_ORDER //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  //  create ( authorization : global );
+  //  update;
+  //  delete;
+  //  field ( readonly ) PurchaseOrder;
+  association _Item;
+  field ( readonly ) PurchaseOrder;
+  action Print result [1] ZAE_PURCHASE_PRINT;
+}
+
+define behavior for ZI_PURCHASE_ORDER_ITEM //alias <alias_name>
+//late numbering
+lock dependent by _Header
+authorization dependent by _Header
+//etag master <field_name>
+{
+  //  update;
+  //  delete;
+  field ( readonly ) PurchaseOrder, PurchaseOrderItem;
+  association _Header;
+}
